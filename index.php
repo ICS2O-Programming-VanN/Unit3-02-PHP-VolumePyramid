@@ -23,13 +23,13 @@
 		?>
 		<!-- Text field and button (Takes Input) -->
 		<form method = "post">
-			Height of Pyramid (cm): <input type="float" name="height">   
+			(h) Height of Pyramid (cm): <input type="float" min="0" name="height">   
 			<br><br>   
-			Length of Base (cm): <input type="float" name="length-of-base">
+			(a) Length of Base (cm): <input type="float" min="0" name="length-of-base">
 			<br><br>
-      Height of Base (cm): <input type="float" name="height-of-base"> <br>
+      (b) Height of Base (cm): <input type="float" min="0" name="height-of-base"> <br>
 			<br><br>
-			<input type = "submit" name = "submit" value="Calculate Volume">
+			<input type ="submit" name ="submit"  value="Calculate Volume">
 		<!-- Calculations for area (With User Input) -->
 		<?php
 			if(isset($_POST['submit'])) {
@@ -40,6 +40,7 @@
 				$volume = number_format($volume, 2); // Rounds to nearest hundredth 
 				echo "<br><br><h4>The Volume of this Triangular Pyramid is " . $volume . "cm<sup>3</sup></h4><br>"; // Outputs Volume
 			}
+        echo '<br><br><img src="./images/triangle_pyramid.jpg" alt="Pyramid formula">'
 		?>
   </body>
 </html>
