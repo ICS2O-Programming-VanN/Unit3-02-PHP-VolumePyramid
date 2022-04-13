@@ -40,7 +40,7 @@
 				$volume = number_format($volume, 2); // Rounds to nearest hundredth 
 				echo "<br><br><h4>The Volume of this Triangular Pyramid is " . $volume . "cm<sup>3</sup></h4><br>"; // Outputs Volume
 			}
-        echo '<br><br><img src="./images/triangle_pyramid.jpg" alt="Pyramid formula">'
+        echo '<br><br><img src="./images/triangle_pyramid.jpg" alt="Pyramid formula">' // Image
 		?>
   </body>
 </html>
